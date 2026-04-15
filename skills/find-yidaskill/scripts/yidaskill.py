@@ -16,7 +16,7 @@ from typing import Optional, Dict, List, Tuple
 # 默认配置
 DEFAULT_CONFIG = {
     "vault": {
-        "url": "github:yida/YidaSkillHub",
+        "url": "github:logda/YidaSkillHub",
         "branch": "main"
     },
     "settings": {
@@ -86,7 +86,7 @@ def init_config():
         config_content = """# YidaSkillHub 配置文件
 
 vault:
-  url: "github:yida/YidaSkillHub"  # GitHub仓库地址
+  url: "github:logda/YidaSkillHub"  # GitHub仓库地址
   branch: "main"                    # 分支名
 
 settings:
@@ -259,7 +259,7 @@ def main():
     
     # list-remote 命令
     parser_list = subparsers.add_parser('list-remote', help='列出远程可用技能')
-    parser_list.add_argument('--owner', default='yida', help='仓库所有者')
+    parser_list.add_argument('--owner', default='logda', help='仓库所有者')
     parser_list.add_argument('--repo', default='YidaSkillHub', help='仓库名')
     parser_list.add_argument('--branch', default='main', help='分支')
     
@@ -268,7 +268,7 @@ def main():
     parser_install.add_argument('skill', help='技能名称')
     parser_install.add_argument('--location', choices=['global', 'local'], required=True,
                                help='安装位置: global(~/.agents/skills/) 或 local(./.agents/skills/)')
-    parser_install.add_argument('--owner', default='yida', help='仓库所有者')
+    parser_install.add_argument('--owner', default='logda', help='仓库所有者')
     parser_install.add_argument('--repo', default='YidaSkillHub', help='仓库名')
     parser_install.add_argument('--branch', default='main', help='分支')
     
