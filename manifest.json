@@ -1,0 +1,14 @@
+{
+  "skills": {
+    "find-yidaskill": {
+      "name": "find-yidaskill",
+      "description": "从YidaSkillHub发现、安装和更新个人技能。当用户说\"找技能\"、 \"安装技能\"、\"更新技能\"、\"初始化yidaskill\"、 \"管理技能\"或类似意图时触发。支持从GitHub的YidaSkillHub仓库 发现可用技能，并安装到全局(~/.agents/skills)或项目级(./.agents/skills)。",
+      "path": "skills/find-yidaskill"
+    },
+    "deepagents-architecture": {
+      "name": "deepagents-architecture",
+      "description": "Guides architectural decisions for Deep Agents applications. Use when deciding between Deep Agents vs alternatives, choosing backend strategies, designing subagent systems, or selecting middleware approaches.",
+      "path": "skills/deepagents-architecture-1.0.0"
+    }
+  }
+}
