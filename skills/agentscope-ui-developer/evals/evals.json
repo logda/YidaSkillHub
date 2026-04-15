@@ -1,0 +1,62 @@
+{
+  "skill_name": "agentscope-ui-developer",
+  "version": "1.0.0",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "basic-component-development",
+      "prompt": "创建一个 StatusBadge 组件，用于显示用户在线状态。组件应该支持 online、offline、busy、away 四种状态，每种状态有不同的颜色，并且可以设置大小（small、default、large）。使用 TypeScript 和 antd-style 编写。",
+      "expected_output": "A TypeScript React component with proper props interface, styled using antd-style, supporting 4 status types with different colors and 3 size variants",
+      "files": []
+    },
+    {
+      "id": 2,
+      "eval_name": "chat-interface-integration",
+      "prompt": "使用 @agentscope-ai/chat 包构建一个完整的聊天界面，包含消息气泡（Bubble）、发送器（Sender）和对话列表（Conversations）。界面应该支持用户和 AI 的消息显示，有加载状态，并且可以对输入的消息进行回复。",
+      "expected_output": "A complete chat interface component using Bubble, Sender, and Conversations components with message state management, loading states, and response handling",
+      "files": []
+    },
+    {
+      "id": 3,
+      "eval_name": "theme-customization",
+      "prompt": "为 AgentScope Spark Design 创建一个自定义主题配置。主题应该包含品牌主色（#1677ff）、自定义字体、圆角大小，以及针对 Button、Card、Input 组件的特殊样式配置。",
+      "expected_output": "A theme configuration object with custom colors, typography, spacing tokens, and component-specific overrides for Button, Card, and Input",
+      "files": []
+    },
+    {
+      "id": 4,
+      "eval_name": "markdown-mermaid-renderer",
+      "prompt": "创建一个 AI 消息组件，能够渲染 Markdown 内容，并支持 Mermaid 图表。当 Markdown 中包含 mermaid 代码块时，应该渲染为流程图。组件应该使用 @agentscope-ai/chat 的 Markdown 和 Mermaid 组件。",
+      "expected_output": "A component that renders Markdown with support for Mermaid diagrams using the markdown code block syntax",
+      "files": []
+    },
+    {
+      "id": 5,
+      "eval_name": "voice-input-component",
+      "prompt": "为聊天界面添加语音输入功能。创建一个 Sender 组件的扩展，包含一个录音按钮。点击开始录音，再次点击停止录音，并将语音转为文字显示在输入框中。使用 Web Speech API。",
+      "expected_output": "A voice-enabled sender component with recording button, speech recognition integration, and transcript display",
+      "files": []
+    },
+    {
+      "id": 6,
+      "eval_name": "mobile-responsive-component",
+      "prompt": "创建一个移动端友好的 AgentCard 组件，用于在移动设备上显示 AI 助手的信息。组件应该包含头像、名称、描述和状态，并且在不同屏幕尺寸下自适应布局。",
+      "expected_output": "A mobile-responsive card component for displaying agent information with avatar, name, description, and status",
+      "files": []
+    },
+    {
+      "id": 7,
+      "eval_name": "streaming-message-display",
+      "prompt": "实现一个支持流式输出的消息组件。当 AI 正在生成回复时，消息应该逐字显示，并有打字机效果。使用 @agentscope-ai/chat 的 Bubble 组件，并添加打字指示器。",
+      "expected_output": "A message bubble component with streaming text display, typewriter effect, and typing indicator",
+      "files": []
+    },
+    {
+      "id": 8,
+      "eval_name": "component-documentation",
+      "prompt": "为一个名为 AgentSelector 的组件编写 Dumi 文档。组件是一个下拉选择器，用于选择不同的 AI 代理。文档应该包含基本用法、不同尺寸、禁用状态、以及 API 表格。",
+      "expected_output": "A Dumi markdown documentation file with live examples, usage demos, and complete API table",
+      "files": []
+    }
+  ]
+}
